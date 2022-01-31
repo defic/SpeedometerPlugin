@@ -92,7 +92,7 @@ void Speedometer::Render(CanvasWrapper canvas)
 	if(*showSpeed)
 	{
 		Vector velocity = car.GetVelocity();
-		float speed = velocity.magnitude();
+		float speed = velocity.Z;//magnitude();
 		float speedPerc = speed/2300.f;
 		const float supersonicIn = 2200.f/2300.f;
 		const float supersonicOut = 2100.f/2300.f;
